@@ -16,7 +16,7 @@ class RedisClient(object):
     """
 
     def __init__(self):
-        self.host = '148.70.3.162'
+        self.host = 'localhost'
         self.port = '6379'
         self.password = None
         self.name = 'proxies'
