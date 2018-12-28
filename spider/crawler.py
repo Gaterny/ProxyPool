@@ -39,7 +39,6 @@ class Crawler(object, metaclass=ProxyMetaclass):
             url = 'https://www.xicidaili.com/nn/{}'.format(page)
             print('Crawling {}'.format(url))
             html = request(url)
-            print(html)
             doc = etree.HTML(html)
             ip = doc.xpath('//tr/td[2]/text()')
             port = doc.xpath('//tr/td[3]/text()')
